@@ -470,27 +470,20 @@ input:checked + label {
 /* ------ FOOTER ------ */
 
 .footer {
-  position: relative;
   width: 100%;
-}
-
-.footer-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: fit-content;
+  background-image: url(images/footer.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .footer-content {
   width: 100%;
-  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   padding-top: 7%;
-  height: 60vh;
 }
 
 .footer-content img {
@@ -503,6 +496,7 @@ input:checked + label {
   width: 100%;
   justify-content: center;
   padding: 0 5%;
+  margin: 140px 0;
 }
 
 .footer-info span {
@@ -542,6 +536,9 @@ input:checked + label {
 }
 
 @media screen and (max-width: 1024px) {
+  .footer-info > div {
+    font-size: 15px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -561,6 +558,7 @@ input:checked + label {
     flex-direction: column;
     width: 100%;
     align-items: center;
+    margin: 0;
   }
 
   .footer-info > div {
@@ -568,8 +566,9 @@ input:checked + label {
     border-top: 1px solid green;
     border-left: none;
     border-top: 1px solid green;
-    width: 40%;
+    width: 51%;
     text-align: center;
+    font-size: 22px;
   }
 
   .footer-info > div:first-child {
@@ -580,7 +579,7 @@ input:checked + label {
   .footer-content {
     height: 100vh;
     margin: 0;
-    padding-top: 20px;
+    padding-top: 50px;
   }
 
   .footer-content img {
@@ -590,6 +589,10 @@ input:checked + label {
   @media screen and (max-width: 500px) {
     .footer-info > div {
       width: 80%;
+      font-size: 17px;
+    }
+    .footer-content {
+      padding-top: 20px;
     }
     .footer-content img {
       width: 35%;
