@@ -3,7 +3,19 @@ const form = document.querySelector('.search-form');
 const navigation = document.querySelector('.navigation-list');
 const burger = document.querySelector('.navigation-burger');
 const navigationLinks = document.querySelectorAll('.navigation-list-item');
+const hero = document.querySelector('.hero');
+const header = document.querySelector('.header');
 
+const fixedHeader = () => {
+    window.addEventListener('scroll', () => {
+        if(window.scrollY > 75){
+            header.classList.add('fixed-header')
+        }
+         if(window.scrollY <= 0 ){
+            header.classList.remove('fixed-header')
+        }
+    })
+}
 
 const navigationSlide = () => {
     burger.addEventListener('click', () => {
@@ -40,5 +52,6 @@ const searchSlide = () => {
     });
 }
 
-navigationSlide()
-searchSlide()
+fixedHeader();
+navigationSlide();
+searchSlide();
