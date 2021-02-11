@@ -153,10 +153,6 @@ i {
   .navigation-list-item a {
     font-size: 12px;
   }
-
-  .header-logo {
-    margin-right: auto;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -168,9 +164,9 @@ i {
     justify-content: space-between;
   }
 
-  /* .header-logo-image {
-    display: none;
-  } */
+  .header-logo {
+    margin-right: auto;
+  }
 
   .header-logo-image-mobile {
     display: inline-block;
@@ -310,6 +306,7 @@ i {
   position: relative;
   height: calc(80vh - 75px);
   overflow: hidden;
+  width: 100%;
 }
 
 .hero input {
@@ -358,6 +355,10 @@ input:checked + label {
   transform: translateX(-100%);
   transition-duration: 0.4s;
   opacity: 1;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  background-image: url("images//desk.jpg");
 }
 
 .slide img {
@@ -375,19 +376,20 @@ input:checked + label {
 }
 
 .banner {
-  position: relative;
-  bottom: 77%;
-  left: 5%;
   color: #fff;
   display: flex;
   flex-direction: column;
   z-index: 1;
+  padding-left: 5%;
+  margin-top: 8%;
+  height: 50%;
+  font-size: 16px;
 }
 
 .banner h1 {
   text-transform: uppercase;
-  font-weight: black;
-  font-size: 40px;
+  font-weight: 900;
+  font-size: 45px;
   margin-top: 23px;
   margin-bottom: 55px;
 }
@@ -413,19 +415,102 @@ input:checked + label {
   transition: all 0.3s ease;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1260px) {
+  .banner {
+    font-size: 14px;
+  }
+
+  .banner h1 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
   .hero {
     position: relative;
     height: calc(100vh - 75px);
     overflow: hidden;
   }
 
-  .banner {
-    bottom: 86%;
+  .label-first {
+    left: 40%;
+  }
+
+  .circle {
+    width: 40px;
+    height: 40px;
+  }
+
+  .hero label {
+    padding: 10px;
   }
 
   .label-second {
-    left: 12%;
+    right: 40%;
+    left: unset;
+  }
+
+  .hero .slide {
+    background-image: url("images/mob-slika.jpg");
+  }
+
+  .slide {
+    text-align: center;
+  }
+
+  a {
+    margin: 50px auto;
+    padding: 25px;
+  }
+
+  .banner {
+    position: unset;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 40px;
+    padding: 5%;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .banner {
+    font-size: 30px;
+    padding: 10%;
+  }
+
+  a {
+    margin-top: 100px;
+  }
+
+  .hero label {
+    padding: 5px;
+  }
+
+  .circle {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .banner {
+    font-size: 15px;
+    padding: 5%;
+  }
+
+  .banner p {
+    font-size: 20px;
+  }
+
+  .circle {
+    width: 15px;
+    height: 15px;
+  }
+
+  .hero label {
+    bottom: 5%;
   }
 }
 
