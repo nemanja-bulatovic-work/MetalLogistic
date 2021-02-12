@@ -135,27 +135,7 @@ i {
   }
 }
 
-@media screen and (max-width: 1200px) {
-  .navigation-list-item {
-    padding: 0 10px;
-  }
-
-  .navigation-list-item a {
-    font-size: 14px;
-  }
-}
-
 @media screen and (max-width: 1024px) {
-  .navigation-list-item {
-    padding: 0 5px;
-  }
-
-  .navigation-list-item a {
-    font-size: 12px;
-  }
-}
-
-@media screen and (max-width: 768px) {
   body {
     overflow-x: hidden;
   }
@@ -205,7 +185,7 @@ i {
 
   .navigation-list-item a {
     color: #fff;
-    font-size: 20px;
+    font-size: 40px;
   }
 
   .navigation-burger {
@@ -297,6 +277,22 @@ i {
 
   i {
     position: unset;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navigation-list-item a {
+    font-size: 25px;
+  }
+
+  .navigation-burger {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .navigation-list-item a {
+    font-size: 20px;
   }
 }
 
@@ -443,6 +439,7 @@ input:checked + label {
 
   .hero label {
     padding: 10px;
+    bottom: 3%;
   }
 
   .label-second {
@@ -458,7 +455,7 @@ input:checked + label {
     text-align: center;
   }
 
-  a {
+  .banner a {
     margin: 50px auto;
     padding: 25px;
   }
@@ -469,23 +466,30 @@ input:checked + label {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: 40px;
+    font-size: 30px;
     padding: 5%;
+    margin-top: 0;
+  }
+
+  .circle {
+    width: 25px;
+    height: 25px;
   }
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 768px) {
   .banner {
     font-size: 30px;
     padding: 10%;
   }
 
-  a {
+  .banner a {
     margin-top: 100px;
   }
 
   .hero label {
     padding: 5px;
+    bottom: 5%;
   }
 
   .circle {
@@ -511,6 +515,16 @@ input:checked + label {
 
   .hero label {
     bottom: 5%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .hero label {
+    bottom: 2%;
+  }
+
+  .banner h1 {
+    font-size: 35px;
   }
 }
 
@@ -870,7 +884,7 @@ input:checked + label {
 
   @media screen and (max-width: 550px) {
     .footer {
-      height: 100vh;
+      height: 100%;
     }
     .footer-info > div {
       width: 80%;
@@ -878,7 +892,7 @@ input:checked + label {
     }
     .footer-content {
       padding-top: 12px;
-      height: 100vh;
+      height: 100%;
     }
     .footer-content img {
       width: 35%;
