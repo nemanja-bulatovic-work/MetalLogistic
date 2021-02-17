@@ -110,4 +110,12 @@
     height: 700px;
     margin-top: 50px;
   }
+
+  .documentation-file a > img {
+    width: 15%;
+  }
+
+  .documentation-image img {
+    height: 75px;
+  }
 }
