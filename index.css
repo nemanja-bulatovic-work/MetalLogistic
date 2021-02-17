@@ -889,6 +889,7 @@ input:checked + label {
     .footer-info > div {
       width: 80%;
       font-size: 17px;
+      padding: 25px 1.5%;
     }
     .footer-content {
       padding-top: 12px;
