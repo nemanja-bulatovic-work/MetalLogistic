@@ -357,8 +357,15 @@ input:checked + label {
   opacity: 1;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100% 100%;
-  background-image: url("images//desk.jpg");
+  background-size: cover;
+}
+
+.bg1 {
+  background-image: url("images/slider-1.jpg");
+}
+
+.bg2 {
+  background-image: url("images/slider-2.jpg");
 }
 
 .slide img {
@@ -449,10 +456,6 @@ input:checked + label {
   .label-second {
     right: 40%;
     left: unset;
-  }
-
-  .hero .slide {
-    background-image: url("images/mob-slika.jpg");
   }
 
   .slide {

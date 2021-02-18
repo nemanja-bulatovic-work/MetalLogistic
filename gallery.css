@@ -1,3 +1,11 @@
+.gallery h1 {
+  color: rgba(0, 0, 0, 0.7);
+  text-transform: uppercase;
+  margin: 50px 0;
+  font-size: 30px;
+  padding-left: 5%;
+}
+
 .gallery-image {
   width: 100%;
 }
@@ -20,9 +28,9 @@
   box-shadow: 0px 0px 13px 1px rgba(0, 0, 0, 0.2);
   writing-mode: vertical-rl;
   margin: 10px;
-  width: 20%;
+  width: 20vw;
   padding: 5px;
-  height: 25%;
+  height: 14vw;
 }
 
 .image-wrapper a {
@@ -34,11 +42,22 @@
   height: 100%;
 }
 
+@media screen and (max-width: 768px) {
+  .image-wrapper {
+    width: 40vw;
+    height: 25vw;
+    margin: 10px 5px;
+    padding: 2px;
+  }
+}
+
 .gallery-lightboxes {
   overflow: hidden;
   z-index: 1000;
   overflow: hidden;
   position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 .gallery-lightboxes .image-lightbox {
@@ -54,6 +73,8 @@
   opacity: 0;
   visibility: hidden;
   transition: opacity 0ms ease-in-out;
+  width: 100%;
+  height: 100%;
 }
 
 .gallery-lightboxes .image-lightbox:target {
@@ -77,6 +98,14 @@
   background: #fff;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
   position: relative;
+  height: 80%;
+}
+
+@media screen and (max-width: 768px) {
+  .gallery-lightboxes .image-lightbox .image-lightbox-wrapper {
+    height: fit-content;
+    padding: 0.2em;
+  }
 }
 
 .gallery-lightboxes .image-lightbox .image-lightbox-wrapper .close {
@@ -121,9 +150,13 @@
   transform: rotate(45deg);
 }
 
+.gallery-lightboxes .image-lightbox .image-lightbox-wrapper a {
+}
+
 .gallery-lightboxes .image-lightbox .image-lightbox-wrapper img {
   margin: 0 auto;
   width: 100%;
+  height: 97%;
 }
 
 .gallery-lightboxes .image-lightbox .image-lightbox-wrapper .arrow-left {
