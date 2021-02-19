@@ -48,3 +48,17 @@
 .article-content {
   width: 100%;
 }
+
+@media screen and (max-width: 768px) {
+  .article-main {
+    flex-direction: column;
+  }
+  .article-section {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .article-content img {
+    width: 100%;
+  }
+}
