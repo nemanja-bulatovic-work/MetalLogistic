@@ -301,7 +301,7 @@ i {
   }
 
   .header-logo img {
-    width: 65%;
+    width: 60%;
   }
 }
 
@@ -626,6 +626,12 @@ input:checked + label {
   line-height: 30px;
 }
 
+@media screen and (max-width: 768px) {
+  .about {
+    padding: 40px 5%;
+  }
+}
+
 /* ------ ACTIVITY ------ */
 
 .activity {
@@ -696,7 +702,7 @@ input:checked + label {
   color: #008e6e;
   text-transform: uppercase;
   font-size: 40px;
-  margin-bottom: 14px;
+  margin: 15px 0;
   letter-spacing: 1px;
   font-weight: 900;
 }
@@ -972,11 +978,100 @@ input:checked + label {
       padding: 25px 1.5%;
     }
     .footer-content {
-      padding-top: 12px;
+      padding-top: 15px;
       height: 100%;
     }
     .footer-content img {
       width: 35%;
     }
+  }
+}
+
+/* ------ CONTENT ------ */
+
+.main {
+  display: flex;
+  padding: 0 5%;
+  justify-content: space-between;
+  padding-bottom: 5%;
+}
+
+main h1 {
+  color: rgba(0, 0, 0, 0.7);
+  text-transform: uppercase;
+  margin-top: 30px;
+  font-size: 30px;
+}
+
+.main-image {
+  width: 100%;
+}
+
+.main-image img {
+  width: 100%;
+}
+
+.contact-card {
+  padding: 2%;
+  box-shadow: -2px 5px 13px 0px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  margin-top: 110px;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 3px;
+}
+
+.contact-card h2 {
+  color: rgba(0, 0, 0, 0.7);
+  text-transform: uppercase;
+}
+
+.contact-card p {
+  margin-bottom: 20px;
+}
+
+.contact-card > p:last-child {
+  margin-bottom: 0;
+}
+
+.contact-card img {
+  width: 20%;
+}
+
+.contact-card-line {
+  height: 1px;
+  background-color: #008e6e;
+  width: 30%;
+  margin: 5px auto;
+}
+
+@media screen and (max-width: 1260px) {
+  .contact-card {
+    width: 28%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .contact-card {
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    padding-bottom: 15%;
+  }
+
+  .contact-card img {
+    width: 16%;
+  }
+
+  .contact-card {
+    margin-top: 50px;
+    padding: 10% 5%;
+    width: 100%;
   }
 }

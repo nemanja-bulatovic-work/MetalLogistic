@@ -1,28 +1,6 @@
-.works-section {
-  padding: 0 5%;
-  padding-bottom: 5%;
-  display: flex;
-  justify-content: space-between;
-}
-
 .works-text {
   width: 60%;
   margin-right: 10px;
-}
-
-.works-image {
-  width: 100%;
-}
-
-.works-image img {
-  width: 100%;
-}
-
-.works-text h1 {
-  color: rgba(0, 0, 0, 0.7);
-  text-transform: uppercase;
-  margin: 30px 0;
-  font-size: 30px;
 }
 
 .works-text p {
@@ -31,6 +9,10 @@
 
 .works-text p:first-child {
   margin-top: 0;
+}
+
+.works-content {
+  margin-top: 30px;
 }
 
 .works-text img {
