@@ -65,13 +65,13 @@
 }
 
 .documentation-card span {
-  color: green;
+  color: #008e6e;
   font-weight: 600;
 }
 
 .documentation-card-line {
   height: 1px;
-  background-color: green;
+  background-color: #008e6e;
   width: 30%;
   margin: 5px auto;
 }

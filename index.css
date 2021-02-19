@@ -34,7 +34,7 @@ a:active {
 .fixed-header {
   position: fixed;
   top: 0;
-  border-bottom: 1px solid green;
+  border-bottom: 1px solid #008e6e;
   background-color: #fff;
   z-index: 100;
   animation: header 0.5s linear;
@@ -76,7 +76,7 @@ a:active {
 }
 
 .navigation-list-item:hover {
-  background-color: green;
+  background-color: #008e6e;
   height: 100%;
   transition: background-color 0.2s ease-in;
 }
@@ -92,7 +92,7 @@ a:active {
 .navigation-burger div {
   width: 25px;
   height: 3px;
-  background-color: green;
+  background-color: #008e6e;
   margin: 5px;
   border-radius: 3px;
   transition: all 0.3s ease;
@@ -114,7 +114,7 @@ a:active {
 
 .search-form input {
   border: none;
-  border-bottom: 1px solid green;
+  border-bottom: 1px solid #008e6e;
   padding-bottom: 5px;
   outline: none;
   padding-left: 30px;
@@ -126,7 +126,7 @@ a:active {
 }
 
 i {
-  color: green;
+  color: #008e6e;
   position: absolute;
 }
 
@@ -166,7 +166,7 @@ i {
     right: 0;
     top: 75px;
     height: calc(100% - 75px);
-    background-color: green;
+    background-color: #008e6e;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -245,7 +245,7 @@ i {
     right: 0;
     top: 75px;
     height: 60px;
-    background-color: green;
+    background-color: #008e6e;
     width: 100%;
     transform: translateX(100%);
     transition: transform 0.3s ease-in;
@@ -292,6 +292,17 @@ i {
   .navigation-burger {
     margin-right: 0px;
   }
+
+  .header-logo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .header-logo img {
+    width: 65%;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -335,14 +346,14 @@ i {
 }
 
 input:checked + label {
-  border: solid 2px green;
+  border: solid 2px #008e6e;
 }
 
 .circle {
   width: 10px;
   height: 10px;
   border-radius: 999px;
-  background-color: green;
+  background-color: #008e6e;
 }
 
 .hero .slide {
@@ -383,12 +394,14 @@ input:checked + label {
 }
 
 .banner {
+  position: absolute;
+  top: 20%;
+  left: 0;
   color: #fff;
   display: flex;
   flex-direction: column;
   z-index: 1;
   padding-left: 5%;
-  margin-top: 8%;
   height: 50%;
   font-size: 16px;
 }
@@ -397,14 +410,14 @@ input:checked + label {
   text-transform: uppercase;
   font-weight: 900;
   font-size: 45px;
-  margin-top: 23px;
-  margin-bottom: 55px;
+  margin-top: 2%;
+  margin-bottom: 7%;
 }
 
 .banner a:link,
 .banner a:visited,
 .banner a:active {
-  background-color: green;
+  background-color: #008e6e;
   padding: 10px 25px;
   text-transform: uppercase;
   border-radius: 4px;
@@ -418,7 +431,7 @@ input:checked + label {
 
 .banner a:hover {
   background-color: #fff;
-  color: green;
+  color: #008e6e;
   transition: all 0.3s ease;
 }
 
@@ -495,7 +508,7 @@ input:checked + label {
   }
 
   .hero label {
-    padding: 5px;
+    padding: 3px;
     bottom: 5%;
   }
 
@@ -516,8 +529,8 @@ input:checked + label {
   }
 
   .circle {
-    width: 15px;
-    height: 15px;
+    width: 12px;
+    height: 12px;
   }
 
   .hero label {
@@ -550,7 +563,7 @@ input:checked + label {
   background-size: cover;
   color: #fff;
   text-align: center;
-  border-bottom: 1px solid green;
+  border-bottom: 1px solid #008e6e;
   text-transform: uppercase;
   width: 30%;
   padding: 6% 2%;
@@ -604,10 +617,7 @@ input:checked + label {
 
 .about {
   width: 100%;
-  background-image: url(images/background-text.jpg);
-  background-position: top center;
-  background-attachment: scroll;
-  background-size: cover;
+  background: url(images/background-text.jpg) no-repeat;
   width: 100%;
   padding: 7% 5%;
   color: #fff;
@@ -630,6 +640,7 @@ input:checked + label {
   font-size: 40px;
   margin-bottom: 14px;
   letter-spacing: 1px;
+  font-weight: 900;
 }
 
 .activity p {
@@ -648,27 +659,16 @@ input:checked + label {
     color: #000;
   }
 
-  .activity::after {
-    content: " ";
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    opacity: 0.2;
-    position: absolute;
-    background-image: url(images/viljuskar.jpg);
-    background-position: top center;
-    background-attachment: scroll;
-    background-size: cover;
+  .activity {
+    flex-direction: column-reverse;
   }
 
   .activity img {
-    display: none;
+    width: 80%;
   }
 
   .activity div {
-    margin: 100px 0;
+    margin: 30px 0;
   }
 }
 
@@ -691,12 +691,16 @@ input:checked + label {
 }
 
 .news-header h2 {
-  color: green;
+  color: #008e6e;
   text-transform: uppercase;
+  font-size: 40px;
+  margin-bottom: 14px;
+  letter-spacing: 1px;
+  font-weight: 900;
 }
 
 .news-header a {
-  background-color: green;
+  background-color: #008e6e;
   color: #fff;
   font-size: 14px;
   padding: 10px 15px;
@@ -735,7 +739,7 @@ input:checked + label {
 }
 
 .news-content span {
-  color: green;
+  color: #008e6e;
   margin: 15px 0;
   display: inline-block;
 }
@@ -756,7 +760,7 @@ input:checked + label {
 }
 
 .news-content a {
-  background-color: green;
+  background-color: #008e6e;
   color: #fff;
   font-size: 14px;
   padding: 10px 15px;
@@ -788,7 +792,7 @@ input:checked + label {
 
   .link-mobile > a {
     display: inline-block;
-    background-color: green;
+    background-color: #008e6e;
     color: #fff;
     font-size: 14px;
     padding: 25px;
@@ -864,12 +868,12 @@ input:checked + label {
 }
 
 .footer-info span {
-  color: green;
+  color: #008e6e;
 }
 
 .footer-info > div {
   padding: 30px;
-  border-left: 1px solid green;
+  border-left: 1px solid #008e6e;
   text-align: left;
   width: fit-content;
   display: flex;
@@ -887,7 +891,7 @@ input:checked + label {
 }
 
 .footer-copyright {
-  color: green;
+  color: #008e6e;
   text-transform: uppercase;
   font-weight: 800;
   margin-bottom: 10px;
@@ -926,9 +930,9 @@ input:checked + label {
 
   .footer-info > div {
     border-left: none;
-    border-top: 1px solid green;
+    border-top: 1px solid #008e6e;
     border-left: none;
-    border-top: 1px solid green;
+    border-top: 1px solid #008e6e;
     width: 51%;
     text-align: center;
     font-size: 22px;
