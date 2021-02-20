@@ -3,6 +3,11 @@ document.getElementById("body").onscroll =  myFunction = () => {
     var target = document.getElementById("main1");
     var xvalue = "center";
     var factor = 0.5;
-    var yvalue =  100 - scrolltotop * factor;
+    var yvalue ;
+  if(window.matchMedia("(max-width: 768px)").matches){
+      yvalue =  250 - scrolltotop * factor;
+    }else{
+      yvalue =  100 - scrolltotop * factor;
+    }
     target.style.backgroundPosition = xvalue + " " + yvalue + "px";
   }

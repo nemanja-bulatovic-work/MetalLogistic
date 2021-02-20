@@ -1,9 +1,11 @@
 .gallery h1 {
   color: rgba(0, 0, 0, 0.7);
   text-transform: uppercase;
-  margin: 30px 0 20px 0;
+  margin: 60px 0 20px 0;
   font-size: 30px;
   padding-left: 5%;
+  font-size: 40px;
+  font-weight: 900;
 }
 
 .gallery-image {
