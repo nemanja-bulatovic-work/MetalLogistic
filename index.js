@@ -1,18 +1,14 @@
-const search = document.querySelector('.search-icon');
-// const form = document.querySelector('.search-form');
-const navigation = document.querySelector('.navigation-list');
-const burger = document.querySelector('.navigation-burger');
-const navigationLinks = document.querySelectorAll('.navigation-list-item');
-const hero = document.querySelector('.hero');
-const header = document.querySelector('.header');
-const input = document.querySelector('.search-input');
-const slide1 = document.getElementById('trigger1');
-const slide2 = document.getElementById('trigger2');
-const intervall = 5000
+var search = document.querySelector('.search-icon');
+// var form = document.querySelector('.search-form');
+var navigation = document.querySelector('.navigation-list');
+var burger = document.querySelector('.navigation-burger');
+var navigationLinks = document.querySelectorAll('.navigation-list-item');
+var hero = document.querySelector('.hero');
+var header = document.querySelector('.header');
+var input = document.querySelector('.search-input');
 
-const fixedHeader = () => {
+function fixedHeader() {
     window.addEventListener('scroll', () => {
-        console.log(slide1.checked)
         if(window.scrollY > 75){
             header.classList.add('fixed-header')
         }
@@ -22,7 +18,7 @@ const fixedHeader = () => {
     })
 };
 
-const navigationSlide = () => {
+function navigationSlide() {
     burger.addEventListener('click', () => {
         document.getElementsByTagName('body')[0].classList.toggle('hidden')
         navigation.classList.toggle('navigation-list-active');
@@ -40,27 +36,6 @@ const navigationSlide = () => {
     });
 };
 
-const autoSlide1 = () => {
-    console.log(slide1.checked)
-    console.log(slide2.checked)
-    if(slide1.checked){
-        setTimeout(() => { 
-            slide1.checked = false
-            slide2.checked = true
-            autoSlide2()
-        }, intervall)
-    }
-};
-
-const autoSlide2 = () => {
-    if(slide2.checked){
-        setTimeout(() => {
-            slide2.checked = false
-            slide1.checked = true
-            autoSlide1();
-        }, intervall)
-    }
-}
 
 // const searchSlide = () => {
 //     search.addEventListener('click', () => {
@@ -84,6 +59,4 @@ const autoSlide2 = () => {
 
 fixedHeader();
 navigationSlide();
-autoSlide1();
-autoSlide2();
 // searchSlide();

@@ -39,13 +39,16 @@ a:active {
   animation: header 0.5s linear;
 }
 
+.header-logo {
+  margin-right: 5%;
+}
+
 .header-logo-image-mobile {
   display: none;
 }
 
 .navigation {
   height: 100%;
-  margin: 0 auto;
 }
 
 .navigation-list {
@@ -461,7 +464,7 @@ input:checked + label {
   }
 
   .banner {
-    top: 30%;
+    top: 20%;
   }
 }
 
@@ -489,7 +492,7 @@ input:checked + label {
   }
 
   .banner {
-    top: 20vh;
+    top: 20%;
   }
 }
 
@@ -541,12 +544,16 @@ input:checked + label {
   }
 
   .hero label {
-    padding: 6px;
+    padding: 5px;
   }
 
   .circle {
     width: 25px;
     height: 25px;
+  }
+
+  .bg2 {
+    background-image: url("images/slider-2-mob.jpg");
   }
 }
 
@@ -556,13 +563,21 @@ input:checked + label {
     padding: 10%;
   }
 
+  .bg1 {
+    background-image: url("images/slider-1-mob.jpg");
+  }
+
   .banner a {
     margin-top: 100px;
   }
 
   .hero label {
     padding: 3px;
-    bottom: 4%;
+    bottom: 3%;
+  }
+
+  .hero label {
+    padding: 5px;
   }
 
   .circle {
@@ -590,9 +605,13 @@ input:checked + label {
     font-size: 20px;
   }
 
+  .hero label {
+    padding: 3px;
+  }
+
   .circle {
-    width: 18px;
-    height: 18px;
+    width: 12px;
+    height: 12px;
   }
 
   .banner a {
@@ -701,12 +720,18 @@ input:checked + label {
 
 .about {
   width: 100%;
-  background: url(images/background-text.jpg) no-repeat;
+  background: url(images/background-text-dark.jpg) no-repeat;
   width: 100%;
   padding: 7% 5%;
   color: #fff;
   line-height: 30px;
   background-size: cover;
+}
+
+@media screen and (min-width: 1600px) {
+  .about p {
+    padding: 0 10%;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -752,7 +777,7 @@ input:checked + label {
 
 @media screen and (min-width: 1600px) {
   .activity img {
-    width: 1200px;
+    width: 800px;
   }
 }
 
@@ -819,7 +844,7 @@ input:checked + label {
 .news-content {
   display: flex;
   justify-content: space-between;
-  padding-top: 5%;
+  padding-top: 2.5%;
   align-items: center;
   width: 100%;
 }
@@ -1119,11 +1144,15 @@ main h1 {
   width: 100%;
 }
 
+.img-mob {
+  display: none;
+}
+
 .contact-card {
-  padding: 2%;
+  padding: 1.5% 2%;
   box-shadow: -2px 5px 13px 0px rgba(0, 0, 0, 0.15);
   text-align: center;
-  margin-top: 110px;
+  margin-top: 150px;
   width: 300px;
   display: flex;
   flex-direction: column;
@@ -1168,10 +1197,22 @@ main h1 {
     padding-bottom: 15%;
   }
 
+  .main section:first-child {
+    margin-right: 0;
+  }
+
   .contact-card {
     margin-top: 50px;
     padding: 10% 5%;
     width: 100%;
+  }
+
+  .img-desc {
+    display: none;
+  }
+
+  .img-mob {
+    display: inline-block;
   }
 }
 

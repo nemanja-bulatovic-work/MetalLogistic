@@ -42,15 +42,15 @@
   color: #fff;
   border: 1px solid #008e6e;
   border-radius: 3px;
-  width: 20%;
-  padding: 10px 0;
-  display: inline-block;
+  padding: 15px 25px;
+  width: max-content;
   margin-left: auto;
   text-transform: uppercase;
   font-weight: 800;
   margin-top: 20px;
   transition: all 0.3s ease;
   cursor: pointer;
+  display: inline-block;
 }
 
 .contact-form input[type="submit"]:hover {
@@ -76,8 +76,9 @@
   }
 
   .contact-form input[type="submit"] {
-    padding: 20px;
-    width: 50%;
+    display: inline-block;
+    padding: 15px 25px;
+    width: max-content;
   }
 
   .contact-form div {
