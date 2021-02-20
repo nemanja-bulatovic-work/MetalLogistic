@@ -159,6 +159,8 @@ i {
   .navigation {
     display: flex;
     align-items: center;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .navigation-list {
@@ -299,15 +301,14 @@ i {
     display: flex;
     align-items: center;
   }
-
-  .header-logo img {
-    width: 60%;
-  }
 }
 
 @media screen and (max-width: 500px) {
   .navigation-list-item a {
     font-size: 20px;
+  }
+  .header-logo img {
+    width: 60%;
   }
 }
 
@@ -411,19 +412,19 @@ input:checked + label {
   text-transform: uppercase;
   font-weight: 900;
   font-size: 45px;
-  margin-top: 2%;
-  margin-bottom: 7%;
+  margin-top: 1%;
+  margin-bottom: 5%;
 }
 
 .banner a:link,
 .banner a:visited,
 .banner a:active {
   background-color: #008e6e;
-  padding: 10px 25px;
+  padding: 15px 25px;
   text-transform: uppercase;
   border-radius: 4px;
   font-weight: 800;
-  margin-top: 50px;
+  margin-top: 5%;
   color: #fff;
   transition: all 0.3s ease;
   cursor: pointer;
@@ -436,6 +437,20 @@ input:checked + label {
   transition: all 0.3s ease;
 }
 
+@media screen and (min-width: 1760px) {
+  .banner p {
+    font-size: 18px;
+  }
+
+  .banner h1 {
+    font-size: 60px;
+  }
+
+  .banner {
+    top: 30%;
+  }
+}
+
 @media screen and (min-width: 1441px) {
   .banner p {
     font-size: 18px;
@@ -444,15 +459,37 @@ input:checked + label {
   .banner h1 {
     font-size: 60px;
   }
+
+  .banner {
+    top: 30%;
+  }
 }
 
-@media screen and (max-width: 1260px) {
+@media screen and (max-width: 1440px) {
   .banner {
     font-size: 14px;
   }
 
   .banner h1 {
     font-size: 40px;
+  }
+
+  .banner {
+    top: 20%;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .banner {
+    font-size: 14px;
+  }
+
+  .banner h1 {
+    font-size: 40px;
+  }
+
+  .banner {
+    top: 20vh;
   }
 }
 
@@ -464,22 +501,22 @@ input:checked + label {
   }
 
   .label-first {
-    left: 40%;
+    left: 45%;
+  }
+
+  .label-second {
+    right: 45%;
+    left: unset;
   }
 
   .circle {
-    width: 40px;
-    height: 40px;
+    width: 25px;
+    height: 25px;
   }
 
   .hero label {
     padding: 10px;
     bottom: 3%;
-  }
-
-  .label-second {
-    right: 40%;
-    left: unset;
   }
 
   .slide {
@@ -503,6 +540,10 @@ input:checked + label {
     width: 100%;
   }
 
+  .hero label {
+    padding: 6px;
+  }
+
   .circle {
     width: 25px;
     height: 25px;
@@ -521,12 +562,21 @@ input:checked + label {
 
   .hero label {
     padding: 3px;
-    bottom: 5%;
+    bottom: 4%;
   }
 
   .circle {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .label-first {
+    left: 43%;
+  }
+
+  .label-second {
+    right: 43%;
+    left: unset;
   }
 }
 
@@ -541,12 +591,25 @@ input:checked + label {
   }
 
   .circle {
-    width: 12px;
-    height: 12px;
+    width: 18px;
+    height: 18px;
+  }
+
+  .banner a {
+    margin: 30px auto !important;
   }
 
   .hero label {
     bottom: 5%;
+  }
+
+  .label-first {
+    left: 40%;
+  }
+
+  .label-second {
+    right: 40%;
+    left: unset;
   }
 }
 
@@ -557,6 +620,15 @@ input:checked + label {
 
   .banner h1 {
     font-size: 35px;
+  }
+
+  .label-first {
+    left: 38%;
+  }
+
+  .label-second {
+    right: 38%;
+    left: unset;
   }
 }
 
@@ -825,6 +897,10 @@ input:checked + label {
 
   .news-heading {
     height: 60px;
+  }
+
+  .news-card {
+    margin-right: 2%;
   }
 }
 

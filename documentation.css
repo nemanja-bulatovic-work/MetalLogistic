@@ -92,6 +92,7 @@
     padding: 10%;
     height: 700px;
     margin-top: 50px;
+    margin-left: 0;
   }
 
   .documentation-file a > img {

@@ -6,9 +6,13 @@ const navigationLinks = document.querySelectorAll('.navigation-list-item');
 const hero = document.querySelector('.hero');
 const header = document.querySelector('.header');
 const input = document.querySelector('.search-input');
+const slide1 = document.getElementById('trigger1');
+const slide2 = document.getElementById('trigger2');
+const intervall = 5000
 
 const fixedHeader = () => {
     window.addEventListener('scroll', () => {
+        console.log(slide1.checked)
         if(window.scrollY > 75){
             header.classList.add('fixed-header')
         }
@@ -16,7 +20,7 @@ const fixedHeader = () => {
             header.classList.remove('fixed-header')
         }
     })
-}
+};
 
 const navigationSlide = () => {
     burger.addEventListener('click', () => {
@@ -34,6 +38,28 @@ const navigationSlide = () => {
             }
         });
     });
+};
+
+const autoSlide1 = () => {
+    console.log(slide1.checked)
+    console.log(slide2.checked)
+    if(slide1.checked){
+        setTimeout(() => { 
+            slide1.checked = false
+            slide2.checked = true
+            autoSlide2()
+        }, intervall)
+    }
+};
+
+const autoSlide2 = () => {
+    if(slide2.checked){
+        setTimeout(() => {
+            slide2.checked = false
+            slide1.checked = true
+            autoSlide1();
+        }, intervall)
+    }
 }
 
 // const searchSlide = () => {
@@ -58,4 +84,6 @@ const navigationSlide = () => {
 
 fixedHeader();
 navigationSlide();
+autoSlide1();
+autoSlide2();
 // searchSlide();

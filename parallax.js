@@ -5,7 +5,7 @@ document.getElementById("body").onscroll =  myFunction = () => {
     var factor = 0.5;
     var yvalue ;
   if(window.matchMedia("(max-width: 768px)").matches){
-      yvalue =  250 - scrolltotop * factor;
+      yvalue =  300 - scrolltotop * 0.4;
     }else{
       yvalue =  100 - scrolltotop * factor;
     }
