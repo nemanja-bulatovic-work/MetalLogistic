@@ -338,7 +338,7 @@ i {
   border: solid 2px transparent;
   border-radius: 999px;
   position: absolute;
-  bottom: 10%;
+  bottom: 7%;
 }
 
 .label-first {
@@ -399,7 +399,8 @@ input:checked + label {
 
 .banner {
   position: absolute;
-  top: 20%;
+  top: 50%;
+  transform: translateY(-60%);
   left: 0;
   color: #fff;
   display: flex;
@@ -449,9 +450,9 @@ input:checked + label {
     font-size: 60px;
   }
 
-  .banner {
+  /* .banner {
     top: 30%;
-  }
+  } */
 }
 
 @media screen and (min-width: 1441px) {
@@ -463,9 +464,9 @@ input:checked + label {
     font-size: 60px;
   }
 
-  .banner {
+  /* .banner {
     top: 20%;
-  }
+  } */
 }
 
 @media screen and (max-width: 1440px) {
@@ -477,9 +478,9 @@ input:checked + label {
     font-size: 40px;
   }
 
-  .banner {
+  /* .banner {
     top: 20%;
-  }
+  } */
 }
 
 @media screen and (max-width: 1280px) {
@@ -491,9 +492,9 @@ input:checked + label {
     font-size: 40px;
   }
 
-  .banner {
+  /* .banner {
     top: 20%;
-  }
+  } */
 }
 
 @media screen and (max-width: 1024px) {
@@ -541,6 +542,7 @@ input:checked + label {
     padding: 5%;
     margin-top: 0;
     width: 100%;
+    transform: translateY(0%);
   }
 
   .hero label {
@@ -1152,7 +1154,7 @@ main h1 {
   padding: 1.5% 2%;
   box-shadow: -2px 5px 13px 0px rgba(0, 0, 0, 0.15);
   text-align: center;
-  margin-top: 150px;
+  margin-top: 158px;
   width: 300px;
   display: flex;
   flex-direction: column;
@@ -1217,6 +1219,24 @@ main h1 {
 }
 
 /* ------ KEYFRAMES ------ */
+
+@keyframes heroEnter {
+  0% {
+    opacity: 0;
+    top: 50%;
+    transform: translate(-5%, -60%);
+  }
+
+  100% {
+    opacity: 1;
+    top: 50%;
+    transform: translateX(0%, -60%);
+  }
+}
+
+.fadeInHero {
+  animation: heroEnter 1s ease-out;
+}
 
 @keyframes leftEnter {
   0% {

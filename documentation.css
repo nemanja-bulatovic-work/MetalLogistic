@@ -95,6 +95,10 @@
     margin-left: 0;
   }
 
+  .documentation-content {
+    margin-top: 0;
+  }
+
   .documentation-file a > img {
     width: 15%;
   }
